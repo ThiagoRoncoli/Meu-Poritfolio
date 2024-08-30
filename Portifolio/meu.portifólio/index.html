@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <!-- HEADER é o cabeçario, MAIN é o conteúdo principal da página, FOOTER é o rodapé da página -->
+     <!-- A tag <button> é diferente da tag <a>, pois, além da semântica, a finalidade também é outra. 
+          Usamos <button> para criar um botão de ação e <a> para indicar um link.-->
+    <!-- usando só o WIDTH na imagem ele modela automaticamente na porporção sem distorcer.
+     Se usar o HEIGHT pode acabar esticando a imagem e distorce-la-->
+     <header class="cabecalho">
+<!--NAV é uma tag semântica que utilizamos para usar como navegação dentro do site--> 
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html" style="--clr: #22D4FD">Home</a>
+            <a class="cabecalho__menu__link" href="about.html" style="--clr: #22D4FD">Sobre mim</a>
+        </nav>
+     </header>
+     <!--Definimos um nome para o elemento pai da página que é o MAIN-->
+
+        <main class="apresentacao">
+            
+            <section class="apresentacao__conteudo">
+
+<!--Abrimos uma section para conseguirmos separar elemenetos em blocos, "dividindo" a parte de textos e botões
+da img assim separando-os, por isso fechamos a tag antes da imagem.-->
+
+
+                <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
+                    <p class="apresentacao__conteudo__texto">
+                        Olá! Sou Thiago Roncoli Brusch, estudante e desenvolvedor Front-end com especialidade em React, HTML e CSS. 
+                        Ajudo pequenos negócios e designers a colocarem em prática boas ideias. 
+                        Vamos conversar?
+                    </p>
+<!--Usamos div mais para elementos mais específicos sem muito significado, tipo "coisinhas".
+tipo tu não vai colocar div num parágrafo de texto, tu vai usar um <p> e o nome da class que tu quer usar. 
+Por esse motivo, a <div> é frequentemente utilizada quando precisamos agrupar elementos sem usar as 
+tags semânticas do HTML. Isso acontece porque a <div> não tem valor semântico. 
+Portanto, não significa nada para os navegadores e mecanismos de pesquisa.-->
+                    <div class="apresentacao__links">
+                        <h2 class="loader span">
+                            <span class="m">A</span>
+                            <span class="m">c</span>
+                            <span class="m">e</span>
+                            <span class="m">s</span>
+                            <span class="m">s</span>
+                            <span class="m">e</span>
+                            <span class="m">&nbsp;</span>
+                            <span class="m">m</span>
+                            <span class="m">i</span>
+                            <span class="m">n</span>
+                            <span class="m">h</span>
+                            <span class="m">a</span>
+                            <span class="m">s</span>
+                            <span class="m">&nbsp;</span>
+                            <span class="m">r</span>
+                            <span class="m">e</span>
+                            <span class="m">d</span>
+                            <span class="m">e</span>
+                            <span class="m">s</span>
+                            <span class="m">:</span>
+
+                        </h2>
+                            <a class="apresentacao__links__link" href="https://instagram.com/Thiagoroncoli" style="--clr: #22D4FD"><span>Instagram</span><i></i></a>
+                            <a class="apresentacao__links__link" href="https://github.com/ThiagoRoncoli" style="--clr:#22D4FD"><span>GitHub</span><i></i></a>
+                    </div>
+                    
+            </section>
+                    <div class="apresentacao__foto">
+                        <img src="./assets/imagem.jpeg" alt="foto do thiago" width="380px">
+                    </div>
+
+        </main>
+        <footer class="rodape">
+            <p>Desenvolvido por Thiago Roncoli Brusch</p>
+        </footer>
+    
+</body>
+
+</html>
